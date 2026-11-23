@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Portfolio | Nguyễn Anh Đạt - Bento Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">NAĐ</span>
+        <span>Nguyễn Anh Đạt</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="coursework.html">Giới thiệu môn học</a></li>
+        <li><a href="defining-brand.html">1. Defining Brand</a></li>
+        <li><a href="personal-brand.html">2. Personal Brand</a></li>
+        <li><a href="portfolio.html">3. Portfolio</a></li>
+        <li><a href="website-portfolio.html">4. Website Portfolio</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Chuyển chế độ Sáng/Tối" aria-label="Toggle theme">🌙</button>
+        <button id="mobileMenuBtn" class="icon-btn mobile-toggle" title="Mở menu" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="bento-grid">
+      <section class="bento-card span-12">
+        <span class="pill-tag">MODULE 03 • PORTFOLIO DỰ ÁN &amp; KỸ NĂNG</span>
+        <h1 class="hero-title">Dự án Tiêu biểu của Nguyễn Anh Đạt</h1>
+        <p class="card-text">
+          Tổng hợp các dự án phát triển Web, ứng dụng giải thuật Python và thực hành hệ thống mạng/cơ sở dữ liệu trong quá trình học tập tại Đại học Lạc Hồng.
+        </p>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Tất cả dự án (5)</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="algorithm">Thuật toán &amp; Python</button>
+          <button class="filter-btn" data-filter="network">Mạng &amp; CSDL</button>
+        </div>
+      </section>
+
+      <!-- Project 1 -->
+      <article class="bento-card project-card span-6" data-category="web">
+        <div>
+          <span class="pill-tag">WEB DEVELOPMENT</span>
+          <h2 class="card-title">UrbanGarden — Quản lý Vườn Đô Thị</h2>
+          <p class="card-text">
+            Ứng dụng web responsive hỗ trợ người dùng đăng ký tài khoản, lưu phiên làm việc bằng LocalStorage, tra cứu và lọc danh mục cây trồng đô thị trên mọi kích thước màn hình.
+          </p>
+          <div class="chip-list">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript ES6+</span>
+            <span class="chip">LocalStorage</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary open-modal-btn"
+            data-title="UrbanGarden — Ứng dụng Web Quản lý Vườn Đô Thị"
+            data-category-label="Web Development • Responsive UI"
+            data-desc="Xây dựng giao diện quản lý không gian xanh đô thị với kiến trúc tách biệt HTML/CSS/JS, tích hợp xác thực người dùng phía client qua LocalStorage, hộp thoại thông báo trạng thái tùy chỉnh và bộ lọc cây trồng trực quan."
+            data-tech="HTML5, CSS3, JavaScript ES6+, LocalStorage, Responsive Grid">
+            Xem chi tiết
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="bento-card project-card span-6" data-category="algorithm">
+        <div>
+          <span class="pill-tag">THUẬT TOÁN &amp; PYTHON</span>
+          <h2 class="card-title">Lập lịch Công việc Tối ưu (Greedy)</h2>
+          <p class="card-text">
+            Ứng dụng Python triển khai giải thuật tham lam (Greedy Job Scheduling) để chọn tập công việc không trùng lặp thời gian tối ưu nhất, kèm chức năng chỉnh sửa tác vụ và kiểm tra dữ liệu đầu vào.
+          </p>
+          <div class="chip-list">
+            <span class="chip">Python</span>
+            <span class="chip">Greedy Algorithm</span>
+            <span class="chip">Data Validation</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary open-modal-btn"
+            data-title="Ứng dụng Lập lịch Công việc Tối ưu (Greedy Job Scheduling)"
+            data-category-label="Cấu trúc Dữ liệu & Giải thuật • Python"
+            data-desc="Cài đặt thuật toán sắp xếp theo thời gian kết thúc sớm nhất để tối đa hóa số lượng công việc thực hiện được. Tích hợp giao diện dòng lệnh tương tác cho phép thêm, sửa, xóa công việc và kiểm thử nhiều bộ dữ liệu."
+            data-tech="Python 3, Greedy Algorithm, Time Complexity O(n log n), CLI">
+            Xem chi tiết
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="bento-card project-card span-4" data-category="web">
+        <div>
+          <span class="pill-tag">FRONTEND UI/UX</span>
+          <h2 class="card-title">Website Trung tâm Đào tạo Trực tuyến</h2>
+          <p class="card-text">
+            Giao diện website giáo dục hiện đại tích hợp chuyển đổi Sáng/Tối (Dark/Light Mode), danh sách khóa học, hồ sơ giảng viên và biểu mẫu đăng ký trực tuyến.
+          </p>
+          <div class="chip-list">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS Variables</span>
+            <span class="chip">JavaScript</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-outline open-modal-btn"
+            data-title="Website Trung tâm Đào tạo Trực tuyến"
+            data-category-label="Frontend Web • Theme Switching"
+            data-desc="Thiết kế trang web giới thiệu trung tâm đào tạo với hệ thống biến CSS hỗ trợ chuyển đổi mượt mà giữa giao diện Sáng và Tối, tối ưu trải nghiệm đọc trên thiết bị di động."
+            data-tech="HTML5, CSS3, JavaScript, GitHub">
+            Xem chi tiết
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="bento-card project-card span-4" data-category="web">
+        <div>
+          <span class="pill-tag">E-COMMERCE</span>
+          <h2 class="card-title">Website Cửa hàng Đồ chơi Trẻ em</h2>
+          <p class="card-text">
+            Xây dựng nguyên mẫu website thương mại điện tử hoàn chỉnh với danh mục sản phẩm, bộ lọc giá, giỏ hàng và quy trình thanh toán trực tuyến.
+          </p>
+          <div class="chip-list">
+            <span class="chip">WordPress</span>
+            <span class="chip">WooCommerce</span>
+            <span class="chip">UI Customization</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-outline open-modal-btn"
+            data-title="Website Thương mại Điện tử Cửa hàng Đồ chơi Trẻ em"
+            data-category-label="CMS & E-Commerce"
+            data-desc="Triển khai hệ thống bán hàng trực tuyến trên nền tảng WordPress và WooCommerce, cấu hình quản lý tồn kho, phân loại độ tuổi sản phẩm và tối ưu giao diện thân thiện với phụ huynh."
+            data-tech="WordPress, WooCommerce, PHP, CSS3">
+            Xem chi tiết
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="bento-card project-card span-4" data-category="network">
+        <div>
+          <span class="pill-tag">MẠNG &amp; CSDL</span>
+          <h2 class="card-title">Thiết kế CSDL &amp; Hạ tầng Mạng Cisco</h2>
+          <p class="card-text">
+            Thiết kế mô hình ERD, chuẩn hóa lược đồ quan hệ trên SQL Server/MySQL và cấu hình Switch/Router Cisco qua IOS CLI (SVI, SSH, bảo mật cơ bản).
+          </p>
+          <div class="chip-list">
+            <span class="chip">SQL Server</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Cisco IOS CLI</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-outline open-modal-btn"
+            data-title="Thiết kế Cơ sở dữ liệu & Cấu hình Mạng Cisco IOS"
+            data-category-label="Hệ thống Thông tin & Mạng Máy tính"
+            data-desc="Xây dựng sơ đồ thực thể kết hợp (ERD) bằng PowerDesigner/draw.io, viết truy vấn SQL tối ưu và cấu hình VLAN, SVI, mã hóa mật khẩu, truy cập từ xa SSH trên thiết bị Cisco."
+            data-tech="SQL Server, MySQL, PowerDesigner, Cisco Packet Tracer, Cisco IOS">
+            Xem chi tiết
+          </button>
+        </div>
+      </article>
+
+      <!-- Technical Skills Matrix -->
+      <section class="bento-card span-12">
+        <h2 class="card-title">Bộ Kỹ năng Chuyên môn (Technical Stack)</h2>
+        <div class="chip-list">
+          <span class="chip">HTML5 &amp; CSS3 (Flexbox / Bento Grid)</span>
+          <span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">ReactJS &amp; VueJS</span>
+          <span class="chip">NodeJS &amp; ASP.NET</span>
+          <span class="chip">Python (NumPy, Pandas, Scikit-Learn)</span>
+          <span class="chip">SQL Server &amp; MySQL</span>
+          <span class="chip">PowerDesigner &amp; draw.io</span>
+          <span class="chip">Cisco IOS CLI &amp; Packet Tracer</span>
+          <span class="chip">Git &amp; GitHub</span>
+        </div>
+      </section>
+
+      <!-- Modal Dialog -->
+      <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true">
+        <div class="modal-box">
+          <div class="modal-header">
+            <div>
+              <span id="modalCategory" class="pill-tag">DỰ ÁN</span>
+              <h3 id="modalTitle" class="card-title">Tiêu đề dự án</h3>
+            </div>
+            <button id="closeModalBtn" class="icon-btn" aria-label="Đóng">✕</button>
+          </div>
+          <p id="modalDesc" class="card-text"></p>
+          <div id="modalTech" class="chip-list"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div><strong>Nguyễn Anh Đạt</strong> • MSSV: 125002177 • Lớp: 25CT114</div>
+      <div>Khoa Công nghệ Thông tin — Trường Đại học Lạc Hồng (LHU)</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

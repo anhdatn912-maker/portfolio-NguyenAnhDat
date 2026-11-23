@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Build a Website Portfolio | Nguyễn Anh Đạt - Bento Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">NAĐ</span>
+        <span>Nguyễn Anh Đạt</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="coursework.html">Giới thiệu môn học</a></li>
+        <li><a href="defining-brand.html">1. Defining Brand</a></li>
+        <li><a href="personal-brand.html">2. Personal Brand</a></li>
+        <li><a href="portfolio.html">3. Portfolio</a></li>
+        <li><a href="website-portfolio.html">4. Website Portfolio</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Chuyển chế độ Sáng/Tối" aria-label="Toggle theme">🌙</button>
+        <button id="mobileMenuBtn" class="icon-btn mobile-toggle" title="Mở menu" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="bento-grid">
+      <section class="bento-card span-8">
+        <span class="pill-tag">MODULE 04 • BUILD A WEBSITE PORTFOLIO</span>
+        <h1 class="hero-title">Kiến trúc Kỹ thuật của Website Portfolio</h1>
+        <p class="card-text">
+          Website Portfolio của <strong>Nguyễn Anh Đạt</strong> được thiết kế theo phong cách <strong>Bento UI Grid 12 cột</strong> và tổ chức theo mô hình đa trang (Multi-Page Architecture) tách biệt rõ ràng giữa cấu trúc nội dung (HTML), định dạng giao diện (CSS) và xử lý tương tác (JavaScript).
+        </p>
+        <ul class="feature-list">
+          <li><span class="feature-dot"></span><span><strong>Tách biệt mối quan tâm (Separation of Concerns):</strong> Toàn bộ 6 trang HTML dùng chung một tệp <code>style.css</code> và <code>script.js</code> giúp dễ bảo trì và đồng bộ giao diện.</span></li>
+          <li><span class="feature-dot"></span><span><strong>Hệ thống lưới Bento UI:</strong> Phân chia thông tin thành các khối thẻ độc lập (<code>span-12</code>, <code>span-8</code>, <code>span-6</code>, <code>span-4</code>), tự động xếp chồng 1 cột trên màn hình điện thoại.</span></li>
+          <li><span class="feature-dot"></span><span><strong>Trải nghiệm người dùng (UX):</strong> Hỗ trợ chuyển đổi Sáng/Tối lưu vào <code>localStorage</code>, tự động đánh dấu trang hiện hành trên thanh điều hướng và xem trước ảnh cục bộ.</span></li>
+        </ul>
+      </section>
+
+      <!-- Directory Structure Card -->
+      <aside class="bento-card span-4">
+        <span class="pill-tag">CẤU TRÚC THƯ MỤC</span>
+        <h2 class="card-title">Tổ chức Mã nguồn</h2>
+        <pre class="file-tree">Portfolio_Nguyen_Anh_Dat/
+├── index.html
+├── coursework.html
+├── defining-brand.html
+├── personal-brand.html
+├── portfolio.html
+├── website-portfolio.html
+├── style.css
+├── script.js
+└── ảnh/
+    ├── avatar.jpg
+    ├── portrait.jpg
+    └── unbreakable.jpg</pre>
+      </aside>
+
+      <!-- Interactive Checklist -->
+      <section class="bento-card span-7">
+        <span class="pill-tag">CHECKLIST HOÀN THIỆN</span>
+        <h2 class="card-title">Danh sách Kiểm tra Trước khi Nộp bài</h2>
+        <label class="checklist-item">
+          <input type="checkbox" class="audit-check" />
+          <span>Thay ảnh đại diện thật vào tệp <code>ảnh/avatar.jpg</code> (hiển thị tại Trang chủ).</span>
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox" class="audit-check" />
+          <span>Thay ảnh chân dung thật vào tệp <code>ảnh/portrait.jpg</code> (hiển thị tại 1. Defining Brand).</span>
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox" class="audit-check" />
+          <span>Thay ảnh hoạt động/truyền cảm hứng vào tệp <code>ảnh/unbreakable.jpg</code> (hiển thị tại 2. Personal Brand).</span>
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox" class="audit-check" />
+          <span>Kiểm tra liên kết chuyển trang giữa cả 6 tệp HTML và chế độ Sáng/Tối.</span>
+        </label>
+        <label class="checklist-item">
+          <input type="checkbox" class="audit-check" />
+          <span>Đẩy mã nguồn lên GitHub Repository và kích hoạt GitHub Pages để lấy link nộp bài.</span>
+        </label>
+      </section>
+
+      <!-- Contact & Info Card -->
+      <section class="bento-card span-5">
+        <span class="pill-tag">THÔNG TIN SINH VIÊN</span>
+        <h2 class="card-title">Hồ sơ Liên hệ</h2>
+        <ul class="feature-list">
+          <li><span class="feature-dot"></span><span><strong>Họ và tên:</strong> Nguyễn Anh Đạt</span></li>
+          <li><span class="feature-dot"></span><span><strong>MSSV:</strong> 125002177</span></li>
+          <li><span class="feature-dot"></span><span><strong>Lớp:</strong> 25CT114 — Khoa Công nghệ Thông tin</span></li>
+          <li><span class="feature-dot"></span><span><strong>Trường:</strong> Đại học Lạc Hồng (LHU)</span></li>
+          <li><span class="feature-dot"></span><span><strong>Giảng viên hướng dẫn:</strong> ThS. Phí Quang Sâm</span></li>
+        </ul>
+        <div class="btn-group">
+          <a href="index.html" class="btn btn-primary">Quay về Trang chủ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div><strong>Nguyễn Anh Đạt</strong> • MSSV: 125002177 • Lớp: 25CT114</div>
+      <div>Khoa Công nghệ Thông tin — Trường Đại học Lạc Hồng (LHU)</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
